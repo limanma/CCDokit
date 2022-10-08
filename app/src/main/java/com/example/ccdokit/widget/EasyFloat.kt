@@ -21,7 +21,7 @@ const val TAG = "EasyFloat"
 object EasyFloat : Application.ActivityLifecycleCallbacks {
     private var lastPosition = Point(0, 0)
     private var cacheMap = mutableMapOf<Int, View>()
-    var clickAction: (() -> Unit)? = null//浮窗点击事件
+    private var clickAction: (() -> Unit)? = null//浮窗点击事件
     private var floatEnable = false
 
     /**
